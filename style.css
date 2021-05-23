@@ -1,0 +1,104 @@
+/* Complete Body common rules */
+
+body {
+    margin: 10px;
+    font-family: "Times New Roman",serif;
+    font-size: 20px;
+    color:white;
+	background: rgb(10,10,77);
+}
+
+
+
+/* Overall Body Header Structure */
+
+.body-header
+{
+     border:2px solid white; 
+    padding:0.5%;
+    margin:0.5%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.head
+{
+         border:2px solid white; 
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden; 
+}
+
+.text-center 
+{
+    text-align: center;
+}
+
+/* widths */
+.logo
+{
+/*     width:17%; */
+    
+}
+
+.navigation
+{
+    width:33%;
+}
+
+.search
+{
+  	width:33%;
+}
+
+.profile
+{
+    width:17%;
+}
+
+
+
+
+/*----------------------------------  */
+
+/* Overall Content Design */
+.content-container
+{
+    border:2px solid white;
+    padding:0.5%;
+    margin:0.5%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+main
+{
+    border:2px solid red;
+    display: flex;
+    flex-direction:column;
+    width:75%;
+}
+
+aside 
+{
+    width: 25%;
+    border:2px solid red;
+    display: flex;
+    flex-direction:column;
+}
+
+.section
+{
+    border:2px solid white;
+    margin:1%;
+    display:flex;
+    overflow:hidden;
+    padding:1%;
+    
+}
+
