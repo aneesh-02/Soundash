@@ -157,7 +157,7 @@ body {
 
 /*----------------------------------  */
 
-/* Overall Content Design */
+/* OVERALL CONTENT CONATAINER */
 .content-container
 {
     border:2px solid white;
@@ -195,104 +195,172 @@ aside
 }
 
 /*----------------------------- */
-/* Aside */
+/* CONTENT = ASIDE */
 
 .aside-header
 {
-    border:2px solid cyan;
+/*     border:2px solid cyan; */
     margin:1%;
     padding:1%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
 }
 
-.list
+.aside-header #queue
 {
-    height:100%;
+/*     border:2px solid orange; */
+    width:50%;
+    text-align:left;
+    font-size:1rem;
+}
+
+.aside-header #drop-down
+{
+/*     border:2px solid orange; */
+    width:50%;
+    text-align:right;
+    font-size:0.5rem;
+    color:#07ecf0;
+}
+
+.aside-header #drop-down i
+{
+    font-size:0.4rem;
+}
+
+.aside-list
+{
+/*     height:100%; */
     display:flex;
     flex-direction:column;
 }
 
-
-.list #song
+.aside-list #song
 {
-    border:2px solid cyan;
+/*     border:2px solid cyan; */
     margin:3%;
     padding:1%;
     display:flex;
     flex-direction:row;
     justify-content:center;
-
 }
 
-.list span 
+.aside-list span 
 {
-    border:2px solid orange;
+    border:0.5px solid orange;
     display:flex;
     justify-content:center;
     align-items:center;   
+    overflow:hidden;
 }
 
-.list #song #number
+.aside-list #song #number
 {
    width:10%;
    font-size:1rem; 
 }
 
-.list #song #img  
+.aside-list #song #img  
 {
-    width:30%;
+/*     width:30%; */
+/*     height:auto; */
+    display:flex;
+    display-direction:row;
+}
+
+.aside-list #song #img img 
+{
+    width:100px;
     height:auto;
 }
-.list #song #img img 
+
+.aside-list #song #img #play  
 {
+    transition:ease-in-out 0.5s;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index:10;
     width:100%;
-    height:auto;
+    height:60%;
+/*     height: 100%; */
+/* 	width: 100%; */
+    color: transparent;
+    text-align: center;
+    padding: 10px;
 }
-.list #song #name 
+
+.aside-list #song #img:hover #play
+{
+    box-shadow: 0 0 20px #74ADC8;
+    background-color: #80808078;
+    color: white;
+}
+
+.aside-list #song #name 
 {
     width:50%;
     flex-direction:column;
-    
-    
 }
-.list #song #name #song-name 
+.aside-list #song #name #song-name 
 {
     width:100%;
     font-size:1rem;
 }
-.list #song #name #artist-name 
+.aside-list #song #name #artist-name 
 {
     width:100%;
     font-size:0.5rem;
 }
-.list #song #like 
+.aside-list #song #like 
 {
+    font-size:0.7rem;
     width:10%;
+    color:lightgrey;
+}
+.aside-list #song #like:hover 
+{
+    color: white;
 }
 
 
-
+/*----------------------------- */
+/* CONTENT = MAIN */
 
 
 /* Banners */
 
-/* .banners
-{
-    height:20rem;
-    width:50rem;
+.banners
+{   
+    height:30%;
+    display:flex;
+    flex-direction:row;
+/*     flex-wrap:wrap; */
 }
 
 #poster
 {
-    margin:1%;
-/*     height:80%;
-    width:100px; */
+    background-color:darkblue;    
     border:2px solid white;
+    margin:1%;
+/*     height:90%; */
+    width:70%; 
 }
- */
 
+#poster:hover
+{
+    box-shadow: 0 0 20px #74ADC8;
+}
 
+/* Quick Picks */
 
-
+.quick-picks
+{
+    display:flex;
+    flex-direction:row;
+}
 
 
 
