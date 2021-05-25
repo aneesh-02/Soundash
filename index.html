@@ -5,25 +5,20 @@
     
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" type="text/css">
-
 </head>
     
 <body>
   
-<!-- Header -->
-    
+<!-- Header BAR -->  
 <header class="body-header">
 
     <span class="logo head">
-        <img id="logo-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png" alt="logo">
-        <span id="logo-title"> Sound<i>ash</i></span>
+        <img id="logo-img" src="images/logo2.jpg" alt="logo" height="80px" width="80px">
+        <span id="logo-title"><a href=""> Sound<i>ash</i></a></span>
     </span>
     
     <nav class="navigation head">
-    	<ul class="horizontal-list text-center nav-menu">
-<!--                 <li>
-                    <a href="#"> Home </a>
-                </li> -->
+        <ul class="horizontal-list text-center nav-menu">
                 <li>
                     <a href=""> Explore </a>
                 </li>
@@ -33,269 +28,391 @@
                 <li>
                     <a href="">Library</a>
                 </li>
-<!--                 <li>
-                    <a href="">Search</a>
-                </li> -->
-            </ul>
+        </ul>
     </nav>
     
      <span class="search head">
-		 <form> <i class="fas fa-search"></i>
-				<input id="search-bar" type="text" placeholder="Search for music you love!">
+         <form> <i class="fas fa-search"></i>
+                <input id="search-bar" type="text" placeholder="Search for music you love!">
              <i class="fas fa-microphone"></i>
- 		</form>
+        </form>
     </span> 
          
     <span class="profile head">
     <span id="bell"><i class="fas fa-bell"></i></span>     
-        <img id="dp" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png" alt="dp">
+        <img id="dp" src="images/dp.jpg" alt="dp" height="60px" width="60px">
     </span>
-           
 </header>
     
 <!-- Content -->
 <content class="content-container">        
 
-<!--Content - Aside -->
-<aside>
+
+    <!--  Content - Main -->
+    <main>
+
+        <!--  Banners    -->
+        <section class="banners section">
+            <div id="poster"> <img src="images/banner1.png">  </div>    
+            <div id="poster"> <img src="images/banner2.png">  </div>    
+            <div id="poster"> <img src="images/banner4.png">  </div>         
+        </section>
+        
+
+        <!--  Quick Picks    -->
+        <section class="quick-picks section">
+            
+            <div class="quick-header">
+              Quick Picks         
+            </div>
+
+            <div class="quick-container">
+
+                <div class="main-song">
+
+                        <span class="img">
+                            <img alt="song image" src="images/ocean.png">
+                        
+                            <span class="play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </span>
+
+                        <span id="name">
+                            <div id="song-name"> Astronauts in the Ocean </div>
+                            <div id="artist-name">Masked Wolf</div> 
+                        </span>
+                        
+                        <span class="info">
+                        <div id="dots"> <i class="fas fa-ellipsis-h"></i> </div>
+                        <div id="duration"> 3:17</div>
+                        </i></span>
+                </div>    
+
+                <div class="main-song">
+
+                        <span class="img">
+                            <img alt="song image" src="images/ocean.png">
+                        
+                            <span class="play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </span>
+
+                        <span id="name">
+                            <div id="song-name"> Astronauts in the Ocean </div>
+                            <div id="artist-name">Masked Wolf</div> 
+                        </span>
+                        
+                        <span class="info">
+                        <div id="dots"> <i class="fas fa-ellipsis-h"></i> </div>
+                        <div id="duration"> 3:17</div>
+                        </i></span>
+                </div>
+
+                <div class="main-song">
+
+                        <span class="img">
+                            <img alt="song image" src="images/ocean.png">
+                        
+                            <span class="play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </span>
+
+                        <span id="name">
+                            <div id="song-name"> Astronauts in the Ocean </div>
+                            <div id="artist-name">Masked Wolf</div> 
+                        </span>
+                        
+                        <span class="info">
+                        <div id="dots"> <i class="fas fa-ellipsis-h"></i> </div>
+                        <div id="duration"> 3:17</div>
+                        </i></span>
+                </div>
+
+                <div class="main-song">
+
+                        <span class="img">
+                            <img alt="song image" src="images/ocean.png">
+                        
+                            <span class="play">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </span>
+
+                        <span id="name">
+                            <div id="song-name"> Astronauts in the Ocean </div>
+                            <div id="artist-name">Masked Wolf</div> 
+                        </span>
+                        
+                        <span class="info">
+                        <div id="dots"> <i class="fas fa-ellipsis-h"></i> </div>
+                        <div id="duration"> 3:17</div>
+                        </i></span>
+                </div>
+
     
-  <!-- Asside Header    -->
-    <header class="aside-header">
-		
-        <div id="queue"> Queue</div>
+            </div>
+        </section>    
         
-		<div id="drop-down"> queue <i class="fas fa-chevron-down"></i></div>        
+
+        <!--  Artists   -->
+        <section class="artists section">
         
-    </header>
+        </section>  
+
+        <!--  Stations   -->
+        <section class="stations section">
+        
+        </section>  
+        
+        <!--  Playlists   -->
+        <section class="playlists section">
+        
+        </section>  
+        
+        <!--  Latest English   -->
+        <section class="english section">
+        
+        </section>  
+        
+        <!--  Latest Punjabi   -->
+        <section class="punjabi section">
+        
+        </section>      
+    </main> 
        
-    <!-- Asside List of songs   -->
-    <section class="aside-list section">
+    <!--Content - Aside -->
+    <aside>
+    
+        <!-- Asside Header    -->
+        <header class="aside-header">
+        
+            <div id="queue"> Queue</div>
+        
+            <div id="drop-down"> queue <i class="fas fa-chevron-down"></i></div>               
+        </header>
+       
+            <!-- Asside List of songs   -->
+        <section class="aside-list section">
 
-<!-- Song1         -->
-    <div id="song">
-            <span id="number">01</span>
+            <!-- Song1         -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song2 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song3 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song4 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song5 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song6 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song7 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song8 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song9 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
+            <!-- Song10 -->
+            <div id="song">
+                    <span id="number">01</span>
+                
+                    <span class="img">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <sapn class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span id="name">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like">
+                    <i class="far fa-heart"></i>
+                    </i></span>
+            </div>
             
-            <div id="img">
-                <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-                <div id="play">
-                    <i class="fas fa-play"></i>
-                </div>       
-			</div>
-            
-            <span id="name">
-                <div id="song-name">  Peaches </div>
-    			<div id="artist-name">Justin Bieber</div>           		   </span>
-            
-            <span id="like">
-			<i class="far fa-heart"></i>
-			</i></span>
-        </div>
-<!-- Song2 -->
-    <div id="song">
-        <span id="number">02</span>
-
-        <span id="img">
-            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-        </span>
-
-        <span id="name">
-            <div id="song-name">  Save Your Tears </div>
-            <div id="artist-name">The Weekend</div>           		   </span>
-
-        <span id="like">
-            <i class="far fa-heart"></i>
-            </i></span>
-</div>
-    <!-- Song3 -->
-	<div id="song">
-    <span id="number">03</span>
-
-    <span id="img">
-        <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-    </span>
-
-    <span id="name">
-        <div id="song-name">  In My Feelings </div>
-        <div id="artist-name">Drake</div>           		   </span>
-
-    <span id="like">
-        <i class="far fa-heart"></i>
-        </i></span>
-</div> 
-    <!-- Song4 -->
-    <div id="song">
-        <span id="number">04</span>
-
-        <span id="img">
-            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-        </span>
-
-        <span id="name">
-            <div id="song-name">  Better </div>
-            <div id="artist-name">Khalid</div>           		   </span>
-
-        <span id="like">
-            <i class="far fa-heart"></i>
-            </i></span>
-    </div>  
-    <!-- Song5 -->
-    <div id="song">
-        <span id="number">05</span>
-
-        <span id="img">
-            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-        </span>
-
-        <span id="name">
-            <div id="song-name">  God's Plan </div>
-            <div id="artist-name">Drake</div>           		   </span>
-
-        <span id="like">
-            <i class="far fa-heart"></i>
-            </i></span>
-    </div>	
-<!-- Song6 -->
-	<div id="song">
-    <span id="number">06</span>
-
-    <span id="img">
-        <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-    </span>
-
-    <span id="name">
-        <div id="song-name">  Blinding Ligts </div>
-        <div id="artist-name">The Weekend</div>           		   </span>
-
-    <span id="like">
-        <i class="far fa-heart"></i>
-        </i></span>
-</div>
-<!-- Song7 -->
-	<div id="song">
-    <span id="number">07</span>
-
-    <span id="img">
-        <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-    </span>
-
-    <span id="name">
-        <div id="song-name">  Perfect </div>
-        <div id="artist-name">Ed Sheeran</div>           		   </span>
-
-    <span id="like">
-        <i class="far fa-heart"></i>
-        </i></span>
-</div>
-<!-- Song8 -->
-	<div id="song">
-    <span id="number">08</span>
-
-    <span id="img">
-        <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-    </span>
-
-    <span id="name">
-        <div id="song-name">  Im the one </div>
-        <div id="artist-name">Justin Bieber</div>           		   </span>
-
-    <span id="like">
-        <i class="far fa-heart"></i>
-        </i></span>
-</div>
-<!-- Song9 -->
-	<div id="song">
-        <span id="number">09</span>
-
-        <span id="img">
-            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-        </span>
-
-        <span id="name">
-            <div id="song-name"> Watermelon Sugar </div>
-            <div id="artist-name">Harry Styles</div>           		   </span>
-
-        <span id="like">
-            <i class="far fa-heart"></i>
-            </i></span>
-</div>  
-<!-- Song10 -->
-	<div id="song">
-    <span id="number">10</span>
-
-    <span id="img">
-        <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png " alt="img">
-    </span>
-
-    <span id="name">
-        <div id="song-name"> Shape of You </div>
-        <div id="artist-name">Ed Sheeran</div>           		   </span>
-
-    <span id="like">
-        <i class="far fa-heart"></i>
-        </i></span>
-</div>       
-
-
-        
-        
-        
-        
-        
+        </section>      
+    </aside>
     
-        
-	</section>
-    
-</aside>
-
-<!--  Content - Main -->
-<main>
-
-<!--  Banners    -->
-    <section class="banners section">
-    
-    <div id="poster">	</div>    
-    <div id="poster">	</div>    
-    <div id="poster">	</div>    
-    
-	</section>
-    
-
-<!--  Quick Picks    -->
-    <section class="quick-picks section">
-        <div id="song"></div>
-	</section>    
-    
-
-<!--  Artists   -->
-    <section class="artists section">
-    
-	</section>  
-
-<!--  Stations   -->
-    <section class="stations section">
-    
-	</section>  
-    
-<!--  Playlists   -->
-    <section class="playlists section">
-    
-	</section>  
-    
-<!--  Latest English   -->
-    <section class="english section">
-    
-	</section>  
-    
-<!--  Latest Punjabi   -->
-    <section class="punjabi section">
-    
-	</section>  
-    
-    
-</main> 
-   
-        
     
  </content>    
+
 </body>
 </html>
