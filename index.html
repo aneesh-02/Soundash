@@ -2,24 +2,36 @@
 <html>
 <head>
     <title>Soundash</title>
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
     
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
         <link rel="stylesheet" href="style.css" type="text/css">
+    
         <link rel="icon" href="images/logo2.jpg" type="image/x-icon">
 </head>
     
 <body>
   
 <!-- Header BAR -->  
-<header class="body-header">
+<div class="body-header flex-row-center">
 
-    <span class="logo head">
-        <img id="logo-img" src="images/logo2.jpg" alt="logo" height="80px" width="80px">
-        <span id="logo-title"><a href=""> Sound<i>ash</i></a></span>
+    <span class="logo head flex-row-center">
+        <a class="flex-row-center"href="#"> 
+            <img class="logo-img" src="images/logo2.jpg" alt="logo" height="80px" width="80px">
+            <span class="logo-title" id="desktop">SOUNDASH</span>
+        </a>
     </span>
-    
-    <nav class="navigation head">
-        <ul class="horizontal-list text-center nav-menu">
+
+ <!--    <span class="logo head flex-row-center" id="mobile">
+        <a class="flex-row-center"href="#"> 
+            <img id="logo-img" src="images/logo2.jpg" alt="logo" height="80px" width="80px">
+        </a>
+    </span>
+ -->
+    <nav class="navigation head flex-row-center">
+        <ul class="horizontal-list text-center nav-menu" id="desktop">
                 <li>
                     <a href=""> Explore </a>
                 </li>
@@ -30,23 +42,48 @@
                     <a href="">Library</a>
                 </li>
         </ul>
+
+        <ul class="horizontal-list text-center nav-menu" id="mobile" >
+                <li>
+                    <a href=""> <i class="fas fa-globe"></i>  </a>
+                </li>
+                <li>
+                    <a href=""> <i class="fas fa-podcast"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="far fa-clone"></i></a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fas fa-bell"></i></a>
+                </li>
+        </ul>
     </nav>
     
-     <span class="search head">
-         <form> <i class="fas fa-search"></i>
-                <input id="search-bar" type="text" placeholder="Search for music you love!">
-             <i class="fas fa-microphone"></i>
+    <span class="search head ">
+        <form class="flex-row-center" id="desktop"> 
+            <i class="fas fa-search"></i>
+            <input class="search-bar" id="desktop" type="text" placeholder="Search for music you love!">
+            <i class="fas fa-microphone"></i>
+        </form>
+
+        <form class="flex-row-center" id="mobile"> 
+            <i class="fas fa-search"></i>
+            <i class="fas fa-microphone"></i>
         </form>
     </span> 
          
-    <span class="profile head">
-    <span id="bell"><i class="fas fa-bell"></i></span>     
-        <img id="dp" src="images/dp.jpg" alt="dp" height="60px" width="60px">
+    <span class="profile head flex-row-center">
+        <span class="bell" id="desktop"><i class="fas fa-bell"></i></span>     
+        <img class="dp" src="images/dp.jpg" alt="dp" height="60px" width="60px">
     </span>
-</header>
+
+
+
+</div>
     
 <!-- Content -->
-<content class="content-container">        
+<div class="content-container">        
 
 
     <!--  Content - Main -->
@@ -413,7 +450,7 @@
     </aside>
     
     
- </content>    
+</div>    
 
 </body>
 </html>
