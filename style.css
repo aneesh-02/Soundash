@@ -13,7 +13,7 @@
 /*CSS Variables and global classes*/
     :root
     {
-        /*--border1:2px solid white;
+     /*        --border1:2px solid white;
         --border2:2px solid orange;
         --border3:2px solid cyan;
         --border4:2px solid red;*/
@@ -330,7 +330,7 @@
     {
         font-weight: lighter;
         font-family:sans-serif;
-        padding-left: 1.2%;
+        padding-left: 2%;
         font-size: 0.75rem;
         color: lightgrey;
         text-transform: uppercase;
@@ -450,6 +450,14 @@
     {
         color: white;
     }
+
+     .img:hover .play
+    {
+         /*box-shadow: 0 0 20px #74ADC8;*/
+        background-color: #80808078;
+        color: white;
+    }
+
 /*3 Song Details*/
     .song-detail 
     {
@@ -608,20 +616,10 @@
 
 /*Playlists*/
 
-    .playlist-container
-    {
-        /*border: 2px solid orange;*/
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-    }
-
     .box
     {
-        border: var(--border3 );
-        height: 70%;
+        border: var(--border3);
+        /*height: 70%;*/
         width: 30%;
         margin:1%;
         display:flex;
@@ -633,7 +631,7 @@
     .box .img
     {   
         /*border: 2px solid white;*/
-        border-radius: 0%; 
+        /*border-radius: 0%; */
         height: 70%;
         width: 100%;
         display: flex;
