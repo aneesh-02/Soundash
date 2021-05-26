@@ -13,7 +13,7 @@
 /*CSS Variables and global classes*/
     :root
     {
-/*        --border1:2px solid white;
+        /*--border1:2px solid white;
         --border2:2px solid orange;
         --border3:2px solid cyan;
         --border4:2px solid red;*/
@@ -291,7 +291,8 @@
     .section
     {
         border:var(--border1);
-        margin:1%;
+        /*border-bottom: 1px solid black;*/
+        margin:0.5%;
         padding:1%;
         height:30%;
         overflow:hidden;
@@ -322,10 +323,17 @@
         /*padding:1%;*/
         text-align:left;
         font-family:Arial;
-        font-size:1.5rem;
-        /*font-weight:bolder;*/
+        font-size:1.5rem; 
+    }
 
-        
+    .subheading
+    {
+        font-weight: lighter;
+        font-family:sans-serif;
+        padding-left: 1.2%;
+        font-size: 0.75rem;
+        color: lightgrey;
+        text-transform: uppercase;
     }
 
     .heading2
@@ -433,7 +441,7 @@
         width: 100%;
     }
 
-    .img:hover
+    img:hover
     {
          box-shadow: 0 0 20px #74ADC8;
     }
@@ -519,31 +527,142 @@
 
 /*Quick Picks*/
 
-/*main container is used to override container's functionality*/
-.main-container  
-{
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    overflow: hidden;  
-}
+    /*main container is used to override container's functionality*/
+    .main-container  
+    {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;  
+    }
 
-/*Overriding aside's song's functionality*/
-.quick-picks .song
-{
-    width:30%;
-}
+    /*Overriding aside's song's functionality*/
+    .quick-picks .song
+    {
+        width:30%;
+    }
 
-.quick-picks #song-name
-{
-    font-size:1.3rem;
-}
+    .quick-picks #song-name
+    {
+        font-size:1.3rem;
+    }
 
-.quick-picks #artist-name
-{
-    font-size:1rem;
-}
+    .quick-picks #artist-name
+    {
+        font-size:1rem;
+    }
+
+
+/*Artists*/
+
+    .singer
+    {
+        border: var(--border3);
+        /*border-radius: 50%;*/
+        width: 12%;
+        height: 80%;
+        margin: 0.5%;
+        padding :1%;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;   
+        overflow:hidden;
+    }
+
+    .singer div
+    {
+        /*border: 0.5px solid red;*/
+        height: 90%;
+        width: 100%;;
+        /*margin: 0.5%;*/
+    }
+
+    .singer .name
+    {
+        height: 10%;
+        width: 100%;
+        /*margin: 0.5%;*/
+        text-align: center;
+    }
+
+    .singer .img
+    {
+        border-radius: 50%;
+    }
+
+    .singer .img img
+    {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .singer img:hover
+    {
+        border: 2px solid white;
+        /*border-radius: 50%;*/
+    }
 
 
 
+/*Playlists*/
+
+    .playlist-container
+    {
+        /*border: 2px solid orange;*/
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+    }
+
+    .box
+    {
+        border: var(--border3 );
+        height: 70%;
+        width: 30%;
+        margin:1%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+    .box .img
+    {   
+        /*border: 2px solid white;*/
+        border-radius: 0%; 
+        height: 70%;
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .box .img img
+    {
+          opacity: 0.8;
+    }
+
+    .box .play
+    {   
+        /*border: 5px solid red;*/
+        transition: 0s;
+        /*color: lightgrey;*/
+        font-weight:bold;
+        font-size: 2rem;
+        color: black;
+        opacity: 1;
+        height: auto;
+        width: auto;
+        top: auto;
+        left: auto;
+        padding: 0%;
+
+        /*justify-content:center;
+        align-items:center;*/
+    }
 
