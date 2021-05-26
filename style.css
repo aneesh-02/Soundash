@@ -13,10 +13,10 @@
 /*CSS Variables and global classes*/
     :root
     {
-        --border1:2px solid white;
+/*        --border1:2px solid white;
         --border2:2px solid orange;
         --border3:2px solid cyan;
-        --border4:2px solid red;
+        --border4:2px solid red;*/
     }
 
     .flex-row-center
@@ -269,6 +269,7 @@
     {
         border:var(--border1);
         padding:0.5%;
+        margin-top:2%;
         align-items:flex-start;
     }
 
@@ -310,19 +311,20 @@
         font-family:Arial;
         font-weight: bold;
         font-size: 1.5rem;
-
+        border-bottom: 2px solid white;
     }
 
     .heading
     {
         border:var(--border3);
         width:48%;
-        margin:1%;
-        padding:1%;
+        /*margin:1%;*/
+        /*padding:1%;*/
         text-align:left;
         font-family:Arial;
         font-size:1.5rem;
         /*font-weight:bolder;*/
+
         
     }
 
@@ -330,11 +332,16 @@
     {
         border:var(--border3);
         width:48%;
-        margin:1%;
-        padding:1%;
+        /*margin:1%;*/
+        /*padding:1%;*/
         text-align:right;
         font-size:0.8rem;
-        color:#07ecf0;
+        color:lightgrey;
+    }
+
+    .heading2:hover
+    {
+        color:white;
     }
 
     /*Container for all sections*/
@@ -355,24 +362,40 @@
     {
         font-size:0.4rem;
     }
+    aside .container
+    {
+        margin-top: 2%;
+    }
 
-    /*SONG */
+/*SONG */
     .song
     {
         border:var(--border3);
         width: 98%;
-        margin: 1%;
-        align-items: stretch;
+        margin: 1.25% 1%;
+        /*align-items: center;*/
     }
 
     .song span 
     {
-        border:0.5px solid orange;
+        /*border:0.5px solid orange;*/
         display:flex;
         justify-content:center;
         align-items:center;   
         overflow:hidden;
 
+    }
+
+    aside .song
+    {
+        border-radius:1.5rem;
+    }
+
+    .song:hover
+    {
+        /*border-radius:1.5rem;*/
+        /*border: 1px solid black;*/
+        background-color: black;
     }
 
 /*1 Song Number*/
@@ -388,8 +411,9 @@
 
     .img
     {
-        width:30%;
-        position: relative; 
+        width:20%;
+        position: relative;
+
     }
 
     .img img
@@ -401,7 +425,7 @@
     .play
     {
         transition: all 0.3s ease-in-out;
-        border: 2px solid white;
+        /*border: 2px solid white;*/
         position: absolute;
         top: 0;
         left: 0;
@@ -418,7 +442,6 @@
     {
         color: white;
     }
-
 /*3 Song Details*/
     .song-detail 
     {
@@ -428,11 +451,13 @@
     }
     .song-detail #song-name 
     {
+        border:var(--border3);
         width:100%;
         font-size:1rem;
     }
     .song-detail #artist-name 
     {
+        border:var(--border3);
         color: #c0cccc;
         width:100%;
         font-size:0.5rem;
@@ -444,6 +469,7 @@
         font-size:1rem;
         width:10%;
         color:lightgrey;
+        padding-right: 1%;
     }
     #like:hover 
     {
@@ -487,111 +513,36 @@
 
     #poster img:hover
     {
-        box-shadow: 0 0 50px #74ADC8;
-    }
-
-/* Quick Picks */
-
-    .quick-picks
-    {
-        display:flex;
-        flex-direction:column;
-    }
-
-    .quick-header
-    {
-        border: 2px solid orange;
-        width: 100%;
-        padding-left: 2%;
-        font-family:Arial;
-        /*margin: 0px 5px 0px 5px;*/
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-
-    .quick-container
-    {
-        border: 2px solid orange;
-        margin:1%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .main-song
-    {
-        /*border: 2px solid cyan;*/
-        width: 45%;
-        height: 40%;
-        margin: 0.5%;
-        display:flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items:center;   
-        overflow:hidden;
-    }
-
-    .main-song span
-    {
-        /*border: 0.5px solid orange;*/
-        height: 100%;
-        /*padding: 2%;*/
-        display:flex;
-        justify-content:center;
-        align-items:center;   
-        overflow:hidden;
+        box-shadow: 0 0 25px #74ADC8;
     }
 
 
-    /*1) Song img = same as aside*/
+/*Quick Picks*/
 
-    /*2) Song name = overriding aside name */
+/*main container is used to override container's functionality*/
+.main-container  
+{
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;  
+}
 
+/*Overriding aside's song's functionality*/
+.quick-picks .song
+{
+    width:30%;
+}
 
-    .main-song #name #song-name 
-    {
-        font-size:1.2rem;
-        line-height: 150%;
-    }
+.quick-picks #song-name
+{
+    font-size:1.3rem;
+}
 
-    .main-song #name #artist-name 
-    {
-        font-size:0.9rem;
-    }
-
-    /*3) Song info = not in aside so write whole*/
-
-    .main-song .info
-    {
-    /*    padding-top:  3%;
-        align-items:flex-start;
-    */  flex-direction: column;
-        /*flex-wrap: wrap; */
-        font-size:1.2rem;
-        text-align: center;
-        width:10%;
-        color:lightgrey;
-    }
-
-    .main-song .info #dots
-    {
-        height:35%;  
-    }
-
-    .main-song .info #duration
-    {
-        height: 60%;
-        font-size:1.5rem; 
-    }
-
-    .main-song .info i:hover 
-    {
-        color: white;
-    }
-
-
-
+.quick-picks #artist-name
+{
+    font-size:1rem;
+}
 
 
 
