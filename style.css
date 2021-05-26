@@ -264,39 +264,43 @@
         }
 
 
-/* CONTENT CONATAINER */
-.content-container
-{
-    border:var(--border1);
-    padding:0.5%;
-    align-items:flex-start;
-}
+/* CONTENT  */
+    .content
+    {
+        border:var(--border1);
+        padding:0.5%;
+        align-items:flex-start;
+    }
 
-main
-{
-    border:var(--border4);
-    /*display: flex;*/
-    flex-direction:column;
-    width:75%;
-}
+    main
+    {
+        border:var(--border4);
+        display: flex;
+        flex-direction:column;
+        width:75%;
+    }
 
-aside 
-{
-    border:var(--border4);
-    width: 25%;
-    flex-direction:column;
-}
+    aside 
+    {
+        border:var(--border4);
+        width: 25%;
+        flex-direction:column;
+    }
 
-.section
-{
-    border:var(--border1);
-    margin:1%;
-    padding:1%;
-    overflow:hidden;
-    
-}
+    .section
+    {
+        border:var(--border1);
+        margin:1%;
+        padding:1%;
+        height:30%;
+        overflow:hidden;
+        display: flex;
+        flex-direction:column;
+        overflow:hidden;
+  
+    }
 
-/*/Header for all sections*/
+    /*/Header for all sections*/
     
     .header
     {
@@ -318,7 +322,7 @@ aside
         text-align:left;
         font-family:Arial;
         font-size:1.5rem;
-        font-weight:bolder;
+        /*font-weight:bolder;*/
         
     }
 
@@ -333,27 +337,26 @@ aside
         color:#07ecf0;
     }
 
-.container
-{
-    border:var(--border2);
-    width: 98%;
-    margin:1%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    /*Container for all sections*/
+    .container
+    {
+        border:var(--border2);
+        width: 98%;
+        margin:1%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /*overflow: scroll;*/
+    }
 
-
-
-/*----------------------------- */
 /* ASIDE */
 
-aside header i
-{
-    font-size:0.4rem;
-}
+    aside header i
+    {
+        font-size:0.4rem;
+    }
 
-/*SONG */
+    /*SONG */
     .song
     {
         border:var(--border3);
@@ -415,6 +418,7 @@ aside header i
     {
         color: white;
     }
+
 /*3 Song Details*/
     .song-detail 
     {
@@ -445,4 +449,150 @@ aside header i
     {
         color: white;
     }
+
+
+/*----------------------------- */
+/* CONTENT = MAIN */
+
+
+/* Banners */
+
+    .banners
+    {   
+        display: flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        /*flex-wrap:wrap;*/
+        overflow:hidden;
+    }
+
+    #poster
+    {
+            background-color:transparent;    
+            /*border:2px solid white;*/
+            border-radius: 1%;
+            flex-shrink:0;
+            margin:1%;
+            height:80%; 
+            width:70%; 
+    }
+
+    #poster img
+    {
+        border-radius: 1%;
+        height: 100%;
+        width: 100%
+    }
+
+    #poster img:hover
+    {
+        box-shadow: 0 0 50px #74ADC8;
+    }
+
+/* Quick Picks */
+
+    .quick-picks
+    {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .quick-header
+    {
+        border: 2px solid orange;
+        width: 100%;
+        padding-left: 2%;
+        font-family:Arial;
+        /*margin: 0px 5px 0px 5px;*/
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .quick-container
+    {
+        border: 2px solid orange;
+        margin:1%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-song
+    {
+        /*border: 2px solid cyan;*/
+        width: 45%;
+        height: 40%;
+        margin: 0.5%;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;   
+        overflow:hidden;
+    }
+
+    .main-song span
+    {
+        /*border: 0.5px solid orange;*/
+        height: 100%;
+        /*padding: 2%;*/
+        display:flex;
+        justify-content:center;
+        align-items:center;   
+        overflow:hidden;
+    }
+
+
+    /*1) Song img = same as aside*/
+
+    /*2) Song name = overriding aside name */
+
+
+    .main-song #name #song-name 
+    {
+        font-size:1.2rem;
+        line-height: 150%;
+    }
+
+    .main-song #name #artist-name 
+    {
+        font-size:0.9rem;
+    }
+
+    /*3) Song info = not in aside so write whole*/
+
+    .main-song .info
+    {
+    /*    padding-top:  3%;
+        align-items:flex-start;
+    */  flex-direction: column;
+        /*flex-wrap: wrap; */
+        font-size:1.2rem;
+        text-align: center;
+        width:10%;
+        color:lightgrey;
+    }
+
+    .main-song .info #dots
+    {
+        height:35%;  
+    }
+
+    .main-song .info #duration
+    {
+        height: 60%;
+        font-size:1.5rem; 
+    }
+
+    .main-song .info i:hover 
+    {
+        color: white;
+    }
+
+
+
+
+
+
 
