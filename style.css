@@ -13,9 +13,10 @@
 /*CSS Variables and global classes*/
     :root
     {
-      /*  --ref-border1:2px solid white;
-        --ref-border2:1px solid cyan;
-        --ref-border3:1px solid orange;*/
+        --border1:2px solid white;
+        --border2:2px solid orange;
+        --border3:2px solid cyan;
+        --border4:2px solid red;
     }
 
     .flex-row-center
@@ -41,6 +42,7 @@
     {
         color: white;   
     }
+
 
     i
     {
@@ -109,11 +111,11 @@
     }
 
 
-/* Body Header */
+/* Top Header Bar */
 
     .body-header
     {
-        border:var(--ref-border1); 
+        border:var(--border1); 
         padding:0.2%;
         background-color: #333;
         /*position: fixed;
@@ -123,7 +125,7 @@
 
     .head
     {
-        border:var(--ref-border2);
+        border:var(--border2);
         overflow:hidden; 
     }
 
@@ -152,7 +154,7 @@
 
         .logo-img
         {
-            border:var(--ref-border3);
+            border:var(--border3);
             width:35%;
             /*border-radius: 50%;*/
         }
@@ -160,7 +162,7 @@
 
         .logo-title
         {
-            border:var(--ref-border3);
+            border:var(--border3);
             padding:5%;
             width:75%;
             font-family: Georgia, serif;
@@ -217,7 +219,7 @@
         }
         .search i
         {
-            border:var(--ref-border3);
+            border:var(--border3);
         	width: 10%;
             font-size:1rem;
             text-align: center;
@@ -229,7 +231,7 @@
         }
         .search input
         {
-            border:var(--ref-border3);
+            border:var(--border3);
             /*border: 0px solid black;   */
             width: 80%;
             font-size:1rem;
@@ -245,12 +247,12 @@
         }
         .bell
         {
-            border:var(--ref-border3);
+            border:var(--border3);
             margin:0px 10px 0px 50px;
         }
 
         .dp
-        {   border:var(--ref-border3);
+        {   border:var(--border3);
             margin:0px 10px 0px 0px;
             border-radius: 50%;
             width:35%;
@@ -265,340 +267,182 @@
 /* CONTENT CONATAINER */
 .content-container
 {
-    border:var(--ref-border1);
+    border:var(--border1);
     padding:0.5%;
     align-items:flex-start;
 }
 
 main
 {
-    border:var(--ref-border2);
-    display: flex;
+    border:var(--border4);
+    /*display: flex;*/
     flex-direction:column;
     width:75%;
 }
 
 aside 
 {
-    border:var(--ref-border2);
+    border:var(--border4);
     width: 25%;
-    display: flex;
     flex-direction:column;
 }
 
 .section
 {
-    /*border:2px solid white;*/
+    border:var(--border1);
     margin:1%;
-    display:flex;
-    overflow:hidden;
     padding:1%;
+    overflow:hidden;
     
 }
 
-/*----------------------------- */
-/* CONTENT = ASIDE */
+/*/Header for all sections*/
+    
+    .header
+    {
+        border:var(--border2);
+        width: 98%;
+        margin: 1%;
+        font-family:Arial;
+        font-weight: bold;
+        font-size: 1.5rem;
 
-.aside-header
+    }
+
+    .heading
+    {
+        border:var(--border3);
+        width:48%;
+        margin:1%;
+        padding:1%;
+        text-align:left;
+        font-family:Arial;
+        font-size:1.5rem;
+        font-weight:bolder;
+        
+    }
+
+    .heading2
+    {
+        border:var(--border3);
+        width:48%;
+        margin:1%;
+        padding:1%;
+        text-align:right;
+        font-size:0.8rem;
+        color:#07ecf0;
+    }
+
+.container
 {
-     /*border:2px solid cyan; */
+    border:var(--border2);
+    width: 98%;
     margin:1%;
-    padding:1%;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.aside-header #queue
-{
-     /*border:2px solid orange; */
-    width:50%;
-    text-align:left;
-    padding-left: 7.5%;
-    font-family:Arial;
-    font-size:1.5rem;
-    font-weight:bolder; 
-}
 
-.aside-header #drop-down
-{
-    /*border:2px solid orange; */
-    width:50%;
-    text-align:right;
-    font-size:0.8rem;
-    color:#07ecf0;
-}
 
-.aside-header #drop-down i
+/*----------------------------- */
+/* ASIDE */
+
+aside header i
 {
     font-size:0.4rem;
 }
 
-.aside-list
-{
-/*     height:100%; */
-    display:flex;
-    flex-direction:column;
-}
+/*SONG */
+    .song
+    {
+        border:var(--border3);
+        width: 98%;
+        margin: 1%;
+        align-items: stretch;
+    }
 
-.aside-list #song
-{
-     /*border:2px solid cyan; */
-    margin:3%;
-    padding:1%;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-}
+    .song span 
+    {
+        border:0.5px solid orange;
+        display:flex;
+        justify-content:center;
+        align-items:center;   
+        overflow:hidden;
 
-.aside-list span 
-{
-    /*border:0.5px solid orange;*/
-    display:flex;
-    justify-content:center;
-    align-items:center;   
-    overflow:hidden;
-}
+    }
 
 /*1 Song Number*/
-.aside-list #song #number
-{
-   width:10%;
-   font-size:1rem;
-   text-align: centers;
-   padding-right: 2.5%; 
-}
 
+    .song-number
+    {
+       width:10%;
+       padding-right: 2.5%;
+       font-size:1rem;
+       text-align: center; 
+    }
 /*2 Song img */
 
-.img
-{
-    width:30%; 
-    overflow: hidden;
-    /*margin: 10px;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
+    .img
+    {
+        width:30%;
+        position: relative; 
+    }
 
-.img img
-{
-    width: 100%;
-    height: 100%;
-}
+    .img img
+    {
+        width: 100%;
+        height: 100%;
+    }
 
-.play
-{
-    transition: all 0.3s ease-in-out;
-    /*border: 2px solid white;*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    color: transparent;
-    text-align: center;   
-    padding: 40% 0% 40% 0%;
-    /*overflow:scroll;*/
-    font-size: 1rem;
-}
+    .play
+    {
+        transition: all 0.3s ease-in-out;
+        border: 2px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
 
-.play i
-{
-    font-size: 150%;
-   
-}
+    .img:hover
+    {
+         box-shadow: 0 0 20px #74ADC8;
+    }
 
-.img:hover .play
-{
-     /*box-shadow: 0 0 20px #74ADC8;*/
-    /*background-color: #80808078;*/
-    color: white;
-}
-
-.img:hover
-{
-     box-shadow: 0 0 20px #74ADC8;
-    /*background-color: #80808078;*/
-    /*color: white;*/
-}
-
-
-/*3 Song name*/
-#name 
-{
-    width:50%;
-    flex-direction:column;
-    padding: 5%;
-}
-#name #song-name 
-{
-    width:100%;
-    font-size:1rem;
-}
-#name #artist-name 
-{
-    color: #c0cccc;
-    width:100%;
-    font-size:0.5rem;
-}
-
+    .play:hover
+    {
+        color: white;
+    }
+/*3 Song Details*/
+    .song-detail 
+    {
+        width:50%;
+        flex-direction:column;
+        padding: 5%;
+    }
+    .song-detail #song-name 
+    {
+        width:100%;
+        font-size:1rem;
+    }
+    .song-detail #artist-name 
+    {
+        color: #c0cccc;
+        width:100%;
+        font-size:0.5rem;
+    }
 /*4 Song like*/
-#like 
-{
-    /*border:1px solid white;*/
-    font-size:1rem;
-    width:10%;
-    color:lightgrey;
-}
-#like:hover 
-{
-    color: white;
-}
-
-
-/*----------------------------- */
-/* CONTENT = MAIN */
-
-
-/* Banners */
-
-.banners
-{   
-    height:30%;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
-     flex-wrap:wrap; 
-     overflow: hidden;
-    ;
-}
-
-#poster
-{
-    background-color:transparent;    
-    /*border:2px solid white;*/
-    border-radius: 1%;
-    flex-shink:0;
-    margin:1%;
-    height:80%; 
-    width:70%; 
-}
-
-#poster img
-{
-    border-radius: 1%;
-    height: 100%;
-    width: 100%
-}
-
-#poster:hover
-{
-    box-shadow: 0 0 20px #74ADC8;
-}
-
-/* Quick Picks */
-
-.quick-picks
-{
-    display:flex;
-    flex-direction:column;
-}
-
-.quick-header
-{
-    /*border: 2px solid orange;*/
-    width: 100%;
-    padding-left: 2%;
-    font-family:Arial;
-    /*margin: 0px 5px 0px 5px;*/
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.quick-container
-{
-    /*border: 2px solid orange;*/
-    margin:1%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.main-song
-{
-    /*border: 2px solid cyan;*/
-    width: 45%;
-    height: 40%;
-    margin: 0.5%;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items:center;   
-    overflow:hidden;
-}
-
-.main-song span
-{
-    /*border: 0.5px solid orange;*/
-    height: 100%;
-    /*padding: 2%;*/
-    display:flex;
-    justify-content:center;
-    align-items:center;   
-    overflow:hidden;
-}
-
-
-/*1) Song img = same as aside*/
-
-/*2) Song name = overriding aside name */
-
-
-.main-song #name #song-name 
-{
-    font-size:1.2rem;
-    line-height: 150%;
-}
-
-.main-song #name #artist-name 
-{
-    font-size:0.9rem;
-}
-
-/*3) Song info = not in aside so write whole*/
-
-.main-song .info
-{
-/*    padding-top:  3%;
-    align-items:flex-start;
-*/  flex-direction: column;
-    /*flex-wrap: wrap; */
-    font-size:1.2rem;
-    text-align: center;
-    width:10%;
-    color:lightgrey;
-}
-
-.main-song .info #dots
-{
-    height:35%;  
-}
-
-.main-song .info #duration
-{
-    height: 60%;
-    font-size:1.5rem; 
-}
-
-.main-song .info i:hover 
-{
-    color: white;
-}
-
-
-
+    #like 
+    {
+        /*border:1px solid white;*/
+        font-size:1rem;
+        width:10%;
+        color:lightgrey;
+    }
+    #like:hover 
+    {
+        color: white;
+    }
 
