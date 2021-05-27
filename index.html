@@ -18,7 +18,7 @@
 <div class="body-header flex-row-center">
 
     <span class="logo head flex-row-center">
-        <a class="flex-row-center"href="#"> 
+        <a class="flex-row-center"href=""> 
             <img class="logo-img" src="images/logo3.jpg" alt="logo" height="80px" width="80px">
             <span class="logo-title" id="desktop">SOUNDASH</span>
         </a>
@@ -27,25 +27,25 @@
     <nav class="navigation head flex-row-center">
         <ul class="horizontal-list text-center nav-menu" id="desktop">
                 <li>
-                    <a href="#"> Explore </a>
+                    <a href="#go-to-latests"> Explore </a>
                 </li>
                 <li>
-                    <a href="#"> Podcasts </a>
+                    <a href="#go-to-playlists"> Playlists </a>
                 </li>
                 <li>
-                    <a href="#">Library</a>
+                    <a href="">Library</a>
                 </li>
         </ul>
 
         <ul class="horizontal-list text-center nav-menu" id="mobile" >
                 <li>
-                    <a href=""> <i class="fas fa-globe"></i>  </a>
+                    <a href="#go-to-latests"> <i class="fas fa-globe"></i>  </a>
                 </li>
                 <li>
-                    <a href=""> <i class="fas fa-podcast"></i></a>
+                    <a href="#go-to-playlists"> <i class="fas fa-list-ul"></i></a>
                 </li>
                 <li>
-                    <a href=""><i class="far fa-clone"></i></a>
+                    <a href=""><i class="far fa-folder"></i></a>
                 </li>
 
                 <li>
@@ -364,7 +364,7 @@
         </section>  
 
         <!--  Playlists   -->
-        <section class="playlists section">
+        <section class="playlists section" id="go-to-playlists">
         
             <header class="header flex-row-center">
             
@@ -405,7 +405,7 @@
         </section>  
         
         <!--  Latest English   -->
-        <section class="latest section">
+        <section class="latest section" id="go-to-latests">
             
             <header class="header flex-row-center">
             
@@ -623,12 +623,33 @@
         <header class="header flex-row-center">
         
             <div class="heading"> Queue</div>
-        
-            <div class="heading2"> queue <i class="fas fa-chevron-down"></i></div>               
+            
+            <div class="heading2"> 
+                        <span class = "dropdown-menu">
+                            <div class="bars"> queues
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                
+                            <div class ="dropdown-list nav-menu">
+                                <ul>
+                                    <li >
+                                        <a href="#"> Most played </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Liked Songs </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Downloaded </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </span>
+
+            </div>               
         </header>
        
             <!-- Asside Container  -->
-        <container class="container">
+        <container class="container" id="go-to-library">
 
             <div class="song flex-row-center">
             
@@ -650,7 +671,28 @@
                     </span>
                     
                     <span id="like" class="">
-                        <i class="far fa-heart"></i>
+                        <div class = "dropdown-menu">
+                            <div class="bars">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                
+                            <div class ="dropdown-list nav-menu">
+                                <ul>
+                                    <li >
+                                        <a href="#">  Play next </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Add to queue</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Go to artist</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
                     </span>
 
             </div>
