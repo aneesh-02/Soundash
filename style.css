@@ -7,16 +7,13 @@
         font-size: 20px;
         color:white;
         background: rgb(78,55,81);
-        background: linear-gradient(0deg, rgba(78,55,81,1) 0%, rgba(4,4,4,1) 100%);
+        background: linear-gradient(90deg, rgba(78,55,81,1) 0%, rgba(4,4,4,1) 100%);
     }   
 
 /*CSS Variables and global classes*/
     :root
     {
-       /* --border1:2px solid white;
-        --border2:2px solid orange;
-        --border3:2px solid cyan;
-        --border4:2px solid red;*/
+        /*--border1:2px solid white; --border2:2px solid orange;--border3:2px solid cyan;--border4:2px solid red;*/
     }
 
     .flex-row-center
@@ -108,8 +105,8 @@
             height: 100%;
             width: 100%;
         }
-    }
 
+    }
 
 /* Top Header Bar */
 
@@ -117,35 +114,30 @@
     {
         border:var(--border1); 
         /*padding:0.2%;*/
-        background-color: #333;
-        /*position: fixed;
+        /*background-color: #333;*/
+        background-image: url(images/theme.jpg);
+        background-size: cover;
+        /*background-position:left;*/
+        position: fixed;
         margin-top: 0px;
-        z-index: 10;*/
+        z-index: 10;
+        top: 0%;
+        left: -0.5%;
+        height: 8%;
     }
 
     .head
     {
         border:var(--border2);
-        overflow:hidden; 
+        overflow:hidden;
+        /*height: 100%; */
     }
 
-    /* widths */
-    .logo
-    {   width:19%;   }
-
-    .navigation
-    {   width:33%;  }
-
-    .search
-    {   width:33%;   }
-
-    .profile
-    {   width:15%;  }
-
-    
     /* Sub body header parts  */
 
     /* 1) logo  */
+        .logo
+        {   width:19%;  height: 100%;   padding: 0% 1%; }
 
         .logo a
         {
@@ -156,6 +148,8 @@
         {
             border:var(--border3);
             width:35%;
+            /*background: transparent;*/
+            /*height:100% ;*/
             /*border-radius: 50%;*/
         }
 
@@ -173,22 +167,25 @@
 
         }
 
-        .logo:hover
+        /*.logo:hover
+        {
+            animation:pulse 0.5s ease-in-out 1 alternate;
+        }*/
+
+        .logo-title:hover
         {
             animation:pulse 0.5s ease-in-out 1 alternate;
         }
 
-        #logo-title:hover
-        {
-            animation:pulse 0.5s ease-in-out 1 alternate;
-        }
-
-        #logo-img:hover
+        .logo-img:hover
         {
             animation:spin 0.5s ease-in-out 1 alternate;
         }
 
     /*2) Navigation */
+
+        .navigation
+        {   width:33%; height: 100%;  }
 
         .horizontal-list 
         {
@@ -208,6 +205,7 @@
 
         .search
         {
+            width:33%;
             background:black;
             color:white;
             padding: 2px 2px;
@@ -241,8 +239,10 @@
         }
 
     /* 4) profile */
+
         .profile
         {
+            width:15%; height: 100%;
             justify-content:space-around;
         }
         .bell
@@ -255,7 +255,8 @@
         {   border:var(--border3);
             margin:0px 10px 0px 0px;
             border-radius: 50%;
-            width:35%;
+            width:auto;
+            height: 100%;
         }
 
         .dp:hover
@@ -263,14 +264,19 @@
             border:2px solid white;
         }
 
-
 /* CONTENT  */
     .content
     {
         border:var(--border1);
         padding:0.5%;
-        margin-top:2%;
+        padding-bottom: 1%;
+        margin-top:4%;
         align-items:flex-start;
+        justify-content: flex-start;
+        height: 90%;
+        width: 100%;
+        position: fixed;
+        overflow: scroll;
     }
 
     main
@@ -279,13 +285,19 @@
         display: flex;
         flex-direction:column;
         width:75%;
+        /*overflow: scroll;*/
     }
 
     aside 
     {
         border:var(--border4);
-        width: 25%;
+        width: 23%;
+        height: 88%;
         flex-direction:column;
+        position: fixed;
+        /*order: 2;*/
+        right: 0.5%;
+        overflow: hidden;
     }
 
     .section
@@ -357,6 +369,7 @@
     {
         border:var(--border2);
         width: 98%;
+        height: 100%;
         margin:1%;
         display: flex;
         flex-direction: column;
@@ -372,7 +385,11 @@
     }
     aside .container
     {
+        height: 93%;
         margin-top: 2%;
+        overflow: scroll;
+        padding-right: 6%;
+        padding-bottom: 7%;
     }
 
 /*SONG */
@@ -406,263 +423,264 @@
         background-color: black;
     }
 
-/*1 Song Number*/
+    /*1 Song Number*/
 
-    .song-number
-    {
-       width:10%;
-       padding-right: 2.5%;
-       font-size:1rem;
-       text-align: center; 
-    }
-/*2 Song img */
+        .song-number
+        {
+           width:10%;
+           padding-right: 2.5%;
+           font-size:1rem;
+           text-align: center; 
+        }
+    /*2 Song img */
 
-    .img
-    {
-        width:20%;
-        position: relative;
+        .img
+        {
+            width:20%;
+            position: relative;
 
-    }
+        }
 
-    .img img
-    {
-        width: 100%;
-        height: 100%;
-    }
+        .img img
+        {
+            width: 100%;
+            height: 100%;
+        }
 
-    .play
-    {
-        transition: all 0.3s ease-in-out;
-        /*border: 2px solid white;*/
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
+        .play
+        {
+            transition: all 0.3s ease-in-out;
+            /*border: 2px solid white;*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
 
-    }
+        }
 
-    img:hover
-    {
-         box-shadow: 0 0 20px #74ADC8;
-    }
+        img:hover
+        {
+             box-shadow: 0 0 20px #74ADC8;
+        }
 
-    .play:hover
-    {
-        color: white;
-    }
+        .play:hover
+        {
+            color: white;
+        }
 
-    .img:hover .play
-    {
-         /*box-shadow: 0 0 20px #74ADC8;*/
-        opacity: 1;
-        color: white;
-    }
-/*3 Song Details*/
-    .song-detail 
-    {
-        width:50%;
-        flex-direction:column;
-        padding: 5%;
-    }
-    .song-detail #song-name 
-    {
-        border:var(--border3);
-        width:100%;
-        font-size:1rem;
-    }
-    .song-detail #artist-name 
-    {
-        border:var(--border3);
-        color: #c0cccc;
-        width:100%;
-        font-size:0.5rem;
-    }
-/*4 Song like*/
-    #like 
-    {
-        /*border:1px solid white;*/
-        font-size:1rem;
-        width:10%;
-        color:lightgrey;
-        padding-right: 1%;
-    }
-    #like:hover 
-    {
-        color: white;
-    }
+        .img:hover .play
+        {
+             /*box-shadow: 0 0 20px #74ADC8;*/
+            opacity: 1;
+            color: white;
+        }
+    /*3 Song Details*/
+        .song-detail 
+        {
+            width:50%;
+            flex-direction:column;
+            padding: 5%;
+        }
+        .song-detail #song-name 
+        {
+            border:var(--border3);
+            width:100%;
+            font-size:1rem;
+        }
+        .song-detail #artist-name 
+        {
+            border:var(--border3);
+            color: #c0cccc;
+            width:100%;
+            font-size:0.5rem;
+        }
+    /*4 Song like*/
+        #like 
+        {
+            /*border:1px solid white;*/
+            font-size:1rem;
+            width:10%;
+            color:lightgrey;
+            padding-right: 1%;
+        }
+        #like:hover 
+        {
+            color: white;
+        }
 
-
-/*----------------------------- */
-/* CONTENT = MAIN */
+/* MAIN */
 
 
-/* Banners */
+    /* Banners */
 
-    .banners
-    {   
-        display: flex;
-        flex-direction:row;
-        justify-content:center;
-        align-items:center;
-        /*flex-wrap:wrap;*/
-        overflow:hidden;
-    }
+        .banners
+        {   
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            /*flex-wrap:wrap;*/
+            overflow:hidden;
 
-    #poster
-    {
-            background-color:transparent;    
-            /*border:2px solid white;*/
+        
+        }
+
+        #poster
+        {
+                background-color:transparent;    
+                /*border:2px solid white;*/
+                border-radius: 1%;
+                flex-shrink:0;
+                margin:1%;
+                height:80%; 
+                width:70%; 
+                /*position: sticky;*/
+        }
+
+        #poster img
+        {
             border-radius: 1%;
-            flex-shrink:0;
+            height: 100%;
+            width: 100%
+        }
+
+        #poster img:hover
+        {
+            box-shadow: 0 0 25px #74ADC8;
+        }
+
+    /*Quick Picks*/
+
+        /*main container is used to override container's functionality*/
+        .main-container  
+        {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow: hidden;  
+        }
+
+        /*Overriding aside's song's functionality*/
+        .quick-picks .song
+        {
+            width:30%;
+        }
+
+        .quick-picks #song-name
+        {
+            font-size:1.3rem;
+        }
+
+        .quick-picks #artist-name
+        {
+            font-size:1rem;
+        }
+
+    /*Artists*/
+
+        .singer
+        {
+            border: var(--border3);
+            /*border-radius: 50%;*/
+            width: 12%;
+            height: 80%;
+            margin: 0.5%;
+            padding :1%;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;   
+            overflow:hidden;
+        }
+
+        .singer div
+        {
+            /*border: 0.5px solid red;*/
+            height: 90%;
+            width: 100%;;
+            /*margin: 0.5%;*/
+        }
+
+        .singer .name
+        {
+            height: 10%;
+            width: 100%;
+            /*margin: 0.5%;*/
+            text-align: center;
+        }
+
+        .singer .img
+        {
+            border-radius: 50%;
+        }
+
+        .singer .img img
+        {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            padding: 1%;
+        }
+
+        .singer img:hover
+        {
+            /*border: 2px solid white;*/
+            /*border-radius: 50%;*/
+            background-color: white;
+        }
+
+    /*Playlists*/
+
+        .box
+        {
+            border: var(--border3);
+            /*height: 70%;*/
+            width: 30%;
             margin:1%;
-            height:80%; 
-            width:70%; 
-    }
+            display:flex;
+            justify-content:center;
+            align-items:center;
 
-    #poster img
-    {
-        border-radius: 1%;
-        height: 100%;
-        width: 100%
-    }
+        }
 
-    #poster img:hover
-    {
-        box-shadow: 0 0 25px #74ADC8;
-    }
+        .box .img
+        {   
+            /*border: 2px solid white;*/
+            /*border-radius: 0%; */
+            height: 70%;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            background-color: white;
+        }
 
-/*Quick Picks*/
+        .box .img img
+        {
+              opacity: 0.8;
+        }
 
-    /*main container is used to override container's functionality*/
-    .main-container  
-    {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        overflow: hidden;  
-    }
+        .box .play
+        {   
+            /*border: 5px solid red;*/
+            transition: 0s;
+            /*color: lightgrey;*/
+            font-weight:bold;
+            font-size: 2rem;
+            color: black;
+            opacity: 1;
+            height: auto;
+            width: auto;
+            top: auto;
+            left: auto;
+            padding: 0%;
 
-    /*Overriding aside's song's functionality*/
-    .quick-picks .song
-    {
-        width:30%;
-    }
+            /*justify-content:center;
+            align-items:center;*/
+        }
 
-    .quick-picks #song-name
-    {
-        font-size:1.3rem;
-    }
-
-    .quick-picks #artist-name
-    {
-        font-size:1rem;
-    }
-
-/*Artists*/
-
-    .singer
-    {
-        border: var(--border3);
-        /*border-radius: 50%;*/
-        width: 12%;
-        height: 80%;
-        margin: 0.5%;
-        padding :1%;
-        display:flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;   
-        overflow:hidden;
-    }
-
-    .singer div
-    {
-        /*border: 0.5px solid red;*/
-        height: 90%;
-        width: 100%;;
-        /*margin: 0.5%;*/
-    }
-
-    .singer .name
-    {
-        height: 10%;
-        width: 100%;
-        /*margin: 0.5%;*/
-        text-align: center;
-    }
-
-    .singer .img
-    {
-        border-radius: 50%;
-    }
-
-    .singer .img img
-    {
-        border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        padding: 1%;
-    }
-
-    .singer img:hover
-    {
-        /*border: 2px solid white;*/
-        /*border-radius: 50%;*/
-        background-color: white;
-    }
-
-/*Playlists*/
-
-    .box
-    {
-        border: var(--border3);
-        /*height: 70%;*/
-        width: 30%;
-        margin:1%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-
-    }
-
-    .box .img
-    {   
-        /*border: 2px solid white;*/
-        /*border-radius: 0%; */
-        height: 70%;
-        width: 100%;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        background-color: white;
-    }
-
-    .box .img img
-    {
-          opacity: 0.8;
-    }
-
-    .box .play
-    {   
-        /*border: 5px solid red;*/
-        transition: 0s;
-        /*color: lightgrey;*/
-        font-weight:bold;
-        font-size: 2rem;
-        color: black;
-        opacity: 1;
-        height: auto;
-        width: auto;
-        top: auto;
-        left: auto;
-        padding: 0%;
-
-        /*justify-content:center;
-        align-items:center;*/
-    }
-
-/*Latests*/
+    /*Latests*/
 
     .latest .main-container
     {
