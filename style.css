@@ -11,14 +11,7 @@
         /*background: rgb(78,55,81);*/
         /*background: linear-gradient(90deg, rgba(78,55,81,1) 0%, rgba(25,25,25,1) 100%);*/
     }   
-/*   body::-webkit-scrollbar 
-   { 
-    display: none; 
-    }*/
-    body::-webkit-scrollbar
-    {
-        background-color:green;
-    }
+
 
 
 /*CSS Variables, global classes and keyframes*/
@@ -91,6 +84,42 @@
             transform: rotate(360deg);
         }
     }
+
+
+    @keyframes appear
+    {
+        0%
+        {
+            opacity: 0;
+        }
+        50% 
+        {
+            opacity: 0.5;
+        }
+        
+        100%
+        {
+            opacity: 1;
+        }
+    }
+
+    @keyframes move
+    {
+        0%
+        {
+            transform: translate(0px);
+        }
+        50% 
+        {
+            transform: translate(50px);
+        }
+        
+        100%
+        {
+            transform: translate(100px);
+        }
+    }
+
 
     @keyframes zoom
     {
@@ -231,6 +260,11 @@
             animation:spin 0.5s ease-in-out 1 alternate;
         }
 
+        .logo-img:hover + .body-footer
+        {
+            animation:pulse 0.5s ease-in-out 1 alternate;   
+        }
+
     /*2) Navigation */
 
         .navigation
@@ -315,8 +349,10 @@
 
 /*Footer Music Bar */
 
-    .body-footer
+
+    #play-music
     {
+        display: none;
         border:var(--border1); 
         border-radius: 3rem;
         background-image: url(images/theme.jpg);
@@ -332,6 +368,13 @@
         align-items: center;
         overflow: hidden;
     }
+
+    #play-music:target
+    {
+        display: flex;
+        animation: appear 0.5s ease-in-out 1 alternate;
+    }
+   
     .foot
     {
         border:var(--border2);
@@ -374,6 +417,7 @@
     }
     .foot .song .img
     {
+        /*border: 1px solid cyan;*/
         width: 10%;
         height: 95%;
         border-radius: 20%;
@@ -383,10 +427,14 @@
         width: 100%;
         height: 100%;
     }
-
     audio::-webkit-media-controls-panel 
     {
         background: rgb(78,55,81);
+    }
+    .close
+    {
+        /*border: 1px solid cyan;*/
+        margin-right: 10% ;
     }
 
 /* CONTENT  */
@@ -395,9 +443,9 @@
         /*opacity: 0.1;*/
         border:var(--border1);
         padding:0.5%;
-        padding-bottom: 1.5%;
+        padding-bottom: 1.75%;
         padding-top: 0%;
-        margin-top:4%;
+        margin-top:3.4%;
         align-items:flex-start;
         justify-content: flex-start;
         height: 90%;
@@ -430,6 +478,8 @@
 
     .section
     {
+        /*transition:all 1s eases;*/
+
         border:var(--border1);
         /*border-bottom: 1px solid black;*/
         margin:0.5%;
@@ -446,6 +496,8 @@
     
     .header
     {
+        transition:all 1s ease;
+
         border:var(--border2);
         width: 98%;
         margin: 1%;
@@ -522,8 +574,11 @@
     }
 
 /*SONG */
+
     .song
     {
+        /*transition:all 1s ease 1s;*/
+        /*transform: translateY(50px);*/
         border:var(--border3);
         width: 98%;
         margin: 1.25% 1%;
@@ -690,13 +745,15 @@
 
         .banner
         {
+            transition:all 2s ease-in-out;
             padding: 0%;
             margin: 0%;
+            flex-direction: column-reverse;
         }
 
         .container1 
         {
-            /*border: 3px solid green;*/
+            border: var(--border1);
             /*margin: 1%;*/
             height: 300px;
             overflow: hidden;
@@ -706,7 +763,7 @@
 
         .container2 
         {
-            /*border: 3px solid yellow;    */
+            border:  var(--border2);
             border-radius: 1.5%;
             margin:1%;
             height:100%;
@@ -716,7 +773,7 @@
 
         .container3
         {
-            /*border :3px solid blue; */
+            border  var(--border3);
             /*margin:1%; */
             height:106%;
             width:104.5%;
@@ -745,10 +802,16 @@
         .container1b
         {
             /*margin:1%;*/
-            /*border: 3px solid red;*/
+            border:  var(--border1);
             text-align:center;
             height: 50px;
         }
+
+        .container3 .box:target
+        {
+             animation: appear 0.5s ease-in-out 1 alternate;
+        }
+
 
         .box img
         {
@@ -768,6 +831,12 @@
         .container1b li
         {
             display:inline-block;
+            transition:all 2s ease-in-out;
+        }
+
+        .container1b li:target
+        {
+            opacity: 0.2;
         }
 
     /*Quick Picks*/

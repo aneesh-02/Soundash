@@ -1,0 +1,6 @@
+1) Make main's width 100% in Responsive view
+2) Make Latest sections justify:center or no wrap so the contents cover full screen
+
+
+
+// DONE Bottom music player bar to appear only when a song is clicked

@@ -81,7 +81,19 @@
 
         <!--  Banners    -->
         <section class="banner section">
-            
+            <div class="container1b">
+                <ul class="horizontal-list">
+                    <li><a href="#p1"><i class="far fa-dot-circle"></i></a></li>
+                    <li><a href="#p2"><i class="far fa-dot-circle"></i></a></li>
+                    <li><a href="#p3"><i class="far fa-dot-circle"></i></a></li>
+                    <li><a href="#p4"><i class="far fa-dot-circle"></i></a></li>
+                    <li><a href="#p5"><i class="far fa-dot-circle"></i></a></li>
+                    <li><a href="#p6"><i class="far fa-dot-circle"></i></a></li>
+                </ul>
+            </div> 
+
+
+
             <div class="container1">
                 <div class="container2">
                     <div class="container3">
@@ -95,16 +107,7 @@
                 </div>
             </div>
 
-            <div class="container1b">
-                <ul class="horizontal-list">
-                    <li><a href="#p1"><i class="far fa-dot-circle"></i></a></li>
-                    <li><a href="#p2"><i class="far fa-dot-circle"></i></a></li>
-                    <li><a href="#p3"><i class="far fa-dot-circle"></i></a></li>
-                    <li><a href="#p4"><i class="far fa-dot-circle"></i></a></li>
-                    <li><a href="#p5"><i class="far fa-dot-circle"></i></a></li>
-                    <li><a href="#p6"><i class="far fa-dot-circle"></i></a></li>
-                </ul>
-            </div>    
+               
         </section>
       
         <!--  Quick Picks    -->
@@ -126,8 +129,8 @@
                     <span class="img ">
                         <img alt="project image" src="images/peaches.jpg">
                     
-                        <span class="play">
-                            <i class="fas fa-play"></i>
+                        <span class="play"><a href="#play-music">
+                            <i class="fas fa-play"></i></a>
                         </span>
                     </span>
 
@@ -137,7 +140,8 @@
                     </span>
                     
                     <span id="like" class="">
-                        <i class="far fa-heart"></i>
+                        <i class="far fa-thumbs-up"></i> &nbsp &nbsp &nbsp
+                        <i class="far fa-thumbs-down"></i>
                     </span>
 
                 </div>
@@ -738,6 +742,98 @@
                     </span>
                     
                     <span id="like" class="">
+                        <div class = "dropdown-menu">
+                            <div class="bars">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                
+                            <div class ="dropdown-list nav-menu">
+                                <ul>
+                                    <li >
+                                        <a href="#">  Play next </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Add to queue</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Go to artist</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </span>
+
+            </div>
+
+            <div class="song flex-row-center">
+            
+                    <span class="song-number ">
+                        01
+                    </span>
+                
+                    <span class="img ">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <span class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span class="song-detail">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like" class="">
+                        <div class = "dropdown-menu">
+                            <div class="bars">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                
+                            <div class ="dropdown-list nav-menu">
+                                <ul>
+                                    <li >
+                                        <a href="#">  Play next </a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Add to queue</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Go to artist</a>
+                                    </li>
+                                    <li>
+                                       <a href="#"> Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </span>
+
+            </div>                        
+
+            <div class="song flex-row-center">
+            
+                    <span class="song-number ">
+                        01
+                    </span>
+                
+                    <span class="img ">
+                        <img alt="project image" src="images/peaches.jpg">
+                    
+                        <span class="play">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </span>
+
+                    <span class="song-detail">
+                        <div id="song-name">  Peaches </div>
+                        <div id="artist-name">Justin Bieber</div> 
+                    </span>
+                    
+                    <span id="like" class="">
                         <i class="far fa-heart"></i>
                     </span>
 
@@ -923,10 +1019,13 @@
 </div>    
 
 <!-- Footer MUSIC BAR -->
-<div class="body-footer flex-row-center">
+<div class="body-footer flex-row-center" id="play-music">
     <span class=" psong foot">
 
+
                 <div class="song flex-row-center">
+                    <span class="close"><a href="#"><i class="fas fa-times"></i></a></span>
+
                     <span class="img ">
                         <img alt="project image" src="images/peaches.jpg">
                     
@@ -948,7 +1047,9 @@
     </span>
 
     <span class="player foot"> 
-        <audio src="songs/soch.mp3 " type="audio/mp3 " controls></audio>
+        <audio controls autoplay>
+            <source src="songs/soch.mp3 " type="audio/mp3 " >
+        </audio>
     </span>
 </div>
 
