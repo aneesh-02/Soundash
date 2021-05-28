@@ -10,7 +10,13 @@
         background: linear-gradient(90deg, rgba(78,55,81,1) 0%, rgba(4,4,4,1) 100%);
         /*background: rgb(78,55,81);*/
         /*background: linear-gradient(90deg, rgba(78,55,81,1) 0%, rgba(25,25,25,1) 100%);*/
-    }   
+    }
+
+    body::-webkit-scrollbar 
+    { 
+    display: none; 
+    }
+   
 
 
 
@@ -1052,4 +1058,68 @@
         {
             font-size:0.8rem;
             height: auto;
+        }
+
+
+
+ /*Single Artist Page       */
+
+     .SA-content
+    {
+        /*opacity: 0.1;*/
+        border:var(--border1);
+        padding:0.5%;
+        /*padding-bottom: 1.75%;*/
+        /*padding-top: 0%;*/
+        margin-top:5%;
+        /*align-items:flex-start;*/
+        /*justify-content: flex-start;*/
+        /*height: 90%;*/
+        /*width: 97%;*/
+        /*position: fixed;*/
+        /*overflow: scroll;*/
+    }
+
+    .SA-content div
+    {
+        border: var(--border2);
+
+    }
+
+    .intro
+    {
+        height: 65vh;
+        opacity: 0.8;
+        background-image: url(images/diljit5.jpg);
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        width: 95%;
+        margin: 1%;
+        padding: 1%;
+        color: black;
+    }
+
+    .intro div
+    {
+        width: 50%;
+    }
+
+        .name h1
+        {
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        /*color: white;*/
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        }
+ 
+        .about
+        {
+            text-align: justify;
+        }
+
+        .actions 
+        {
+            text-align: center;
         }
