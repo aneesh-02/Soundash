@@ -1133,37 +1133,36 @@
         flex-direction: row;
         overflow: hidden;
         justify-content: center;
+        /*height: 80vh;*/
     }
 
-    .sa-main .section
+    .sa-singles
     {
         width: 47%;
-        /*margin: 0%;*/
-        /*background: transparent;*/
+    }
+    .sa-albums
+    {
+        width: 47%;
     }
 
 
     .sa-container
     {
-            justify-content: center;
-            flex-wrap: wrap;
-            overflow: hidden;  
-
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;  
     }
 
-        .sa-container .song
-        {
-            width:97%;
-            border-radius: 0.5rem;
-            /*border: 1px solid black;*/
-            /*background-color: rgba(0,0,0,0.1);*/
-        }
+    .sa-container .song
+    {
+        width:97%;
+        border-radius: 0.5rem;
+    }
 
     .sa-container .song .img
     {
         width: 10%;
     }
-
 
     .sa-container .song .song-detail
     {
@@ -1171,13 +1170,57 @@
     }
     .sa-container .song #song-name
     {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .sa-container .song #artist-name
     {
         font-size: 1rem;
-        /*color: black;*/
     }
+
+    .sa-albums .sa-container
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sa-container .latest-song
+    {
+        margin: 2%;
+        width: 40%;
+    }
+    .sa-container .latest-song .img
+    {
+        /*margin: 1%;*/
+        width: 60%;
+        height: 50%;
+    }
+
+    .sa-container .latest-song .song-detail 
+        {
+            height: 40%;
+            width:100%;
+            text-align:center;
+            overflow: hidden;
+        }
+
+        .sa-container .latest-song .song-detail div
+        {
+            text-align: center;
+            overflow-wrap:break-word;
+            margin:1%; 
+        }
+
+        .sa-container .latest-song .song-detail #song-name 
+        {
+            font-size:1.5rem;
+            height: auto;
+        }
+        .sa-container .latest-song .song-detail #artist-name 
+        {
+            font-size:1rem;
+            height: auto;
+        }
+
 
 
 
