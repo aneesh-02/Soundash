@@ -17,9 +17,6 @@
     display: none; 
     }
    
-
-
-
 /*CSS Variables, global classes and keyframes*/
     :root
     {
@@ -143,54 +140,6 @@
         }
     }
 
-/* Responsive Design*/
-
-    #mobile
-    {
-        display: none;
-    }
-
-    @media only screen and (max-width: 800px)
-    {
-        #desktop
-        {
-            display: none;
-        }
-
-        #mobile
-        {
-            display: flex;
-        }
-
-        .logo-img
-        {
-            height: 100%;
-            width: 100%;
-        }
-
-        body
-        {
-            font-size: 10px;
-        }
-
-        main
-        {
-            width:100%;
-            border: 5px solid green;
-        }
-
-        .content
-        {
-            justify-content: center;
-            flex-direction: row;
-        }
-
-        .box .play
-        {
-            font-size: 1rem;
-        }
-
-    }
 
 /* Top Header Bar */
 
@@ -593,7 +542,7 @@
 
     .song span 
     {
-        /*border:0.5px solid orange;*/
+        border:var(--border4);
         display:flex;
         justify-content:center;
         align-items:center;   
@@ -671,7 +620,7 @@
         {
             width:50%;
             flex-direction:column;
-            padding: 5%;
+            padding: 1%;
         }
         .song-detail #song-name 
         {
@@ -1061,17 +1010,70 @@
         }
 
 
+/*Single Artist Page       */
 
- /*Single Artist Page       */
+/*INTRO*/
+    .intro
+    {
+        border: var(--border1);
+        border-bottom: 2px solid whitesmoke;
+        height: 65vh;
+        opacity: 0.8;
+        /*width: 95%;*/
+        margin-top: 5%;
+        padding: 1%;
+        background-image: url(images/diljit5.jpg);
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        color: black;
+        overflow: hidden;
+    }
+
+    .intro div
+    {
+        border: var(--border2);
+        /*margin: 1%;*/
+        border-radius: 1rem;
+        padding: 0% 1%;
+        margin: 1%;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+
+    .name h1
+    {
+        display: inline;
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        /*color: white;*/
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-shadow: 1px 1px 4px white;
+    }
+    .name h3
+    {
+        display: inline;
+    }
+ 
+    .about
+    {
+        font-size: 1.5rem;
+        text-align: justify;
+        font-weight: bold;  
+    }
+
+/*CONTENT*/
 
      .SA-content
     {
         /*opacity: 0.1;*/
         border:var(--border1);
-        padding:0.5%;
+        /*padding:0.5%;*/
         /*padding-bottom: 1.75%;*/
         /*padding-top: 0%;*/
-        margin-top:5%;
+        /*margin-top:5%;*/
         /*align-items:flex-start;*/
         /*justify-content: flex-start;*/
         /*height: 90%;*/
@@ -1080,46 +1082,167 @@
         /*overflow: scroll;*/
     }
 
-    .SA-content div
+/*Action*/
+    .actions 
+    {
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        margin-bottom: 0px;
+        margin-top: -6vh;
+    }
+
+    .actions div
     {
         border: var(--border2);
-
-    }
-
-    .intro
-    {
-        height: 65vh;
-        opacity: 0.8;
-        background-image: url(images/diljit5.jpg);
-        background-size: cover;
-        background-position: top;
-        background-attachment: fixed;
-        width: 95%;
-        margin: 1%;
+        width: 30%;
+        /*height: 2rem;*/
         padding: 1%;
-        color: black;
+        overflow: hidden;
     }
 
-    .intro div
+    .actions div span
     {
-        width: 50%;
+        padding: 1.5%;
+        /*width: 100%;*/
+        border: var(--border3);
+        border: 1px solid white;
+        border-radius: 1rem;
+        background-color: black;
+        color: white;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-style: italic;
+        
     }
 
-        .name h1
+    .actions a:active
+    {
+        font-size: 1.7rem;
+        /*box-shadow: 0 0 20px #74ADC8;  */
+    }
+
+/*SA main*/
+    .sa-main
+    {
+        border: var(--border4);
+        /*padding: 0.5%;*/
+        /*margin: 0.5%;*/
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        justify-content: center;
+    }
+
+    .sa-main .section
+    {
+        width: 47%;
+        /*margin: 0%;*/
+        /*background: transparent;*/
+    }
+
+
+    .sa-container
+    {
+            justify-content: center;
+            flex-wrap: wrap;
+            overflow: hidden;  
+
+    }
+
+        .sa-container .song
         {
-        font-size: 3rem;
-        letter-spacing: 0.1rem;
-        /*color: white;*/
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-        }
- 
-        .about
-        {
-            text-align: justify;
+            width:97%;
+            border-radius: 0.5rem;
+            /*border: 1px solid black;*/
+            /*background-color: rgba(0,0,0,0.1);*/
         }
 
-        .actions 
+    .sa-container .song .img
+    {
+        width: 10%;
+    }
+
+
+    .sa-container .song .song-detail
+    {
+        flex-direction: row;
+    }
+    .sa-container .song #song-name
+    {
+        font-size: 1.2rem;
+    }
+    .sa-container .song #artist-name
+    {
+        font-size: 1rem;
+        /*color: black;*/
+    }
+
+
+
+
+/* Responsive Design*/
+
+    #mobile
+    {
+        display: none;
+    }
+
+    @media only screen and (max-width: 800px)
+    {
+        #desktop
         {
-            text-align: center;
+            display: none;
         }
+
+        #mobile
+        {
+            display: flex;
+        }
+
+        .logo-img
+        {
+            height: 100%;
+            width: 100%;
+        }
+
+        body
+        {
+            font-size: 10px;
+        }
+
+        main
+        {
+            width:100%;
+        }
+
+        .content
+        {
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .box .play
+        {
+            font-size: 1rem;
+        }
+
+        .intro .about
+        {
+            width :95%;
+        }
+
+        .sa-main
+        {    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sa-main .section
+        {
+            width: 97%;
+        }
+
+    }
