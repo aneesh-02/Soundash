@@ -2,14 +2,11 @@
     
     body 
     {
-        /*margin: 10px;*/
         font-family: "Times New Roman",serif;
         font-size: 20px;
         color:white;
         background: rgb(78,55,81);
         background: linear-gradient(90deg, rgba(78,55,81,1) 0%, rgba(4,4,4,1) 100%);
-        /*background: rgb(78,55,81);*/
-        /*background: linear-gradient(90deg, rgba(78,55,81,1) 0%, rgba(25,25,25,1) 100%);*/
     }
 
     body::-webkit-scrollbar 
@@ -398,7 +395,7 @@
         /*opacity: 0.1;*/
         border:var(--border1);
         padding:0.5%;
-        padding-bottom: 1.75%;
+        padding-bottom: 2%;
         padding-top: 0%;
         margin-top:3.4%;
         align-items:flex-start;
@@ -533,11 +530,10 @@
     .song
     {
         /*transition:all 1s ease 1s;*/
-        /*transform: translateY(50px);*/
         border:var(--border3);
         width: 98%;
         margin: 1.25% 1%;
-        /*align-items: center;*/
+        position: relative;
     }
 
     .song span 
@@ -557,8 +553,6 @@
 
     .song:hover
     {
-        /*border-radius:1.5rem;*/
-        /*border: 1px solid black;*/
         background-color: black;
     }
 
@@ -591,7 +585,6 @@
         .play
         {
             transition: all 0.3s ease-in-out;
-            /*border: 2px solid white;*/
             position: absolute;
             top: 0;
             left: 0;
@@ -612,7 +605,6 @@
 
         .img:hover .play
         {
-             /*box-shadow: 0 0 20px #74ADC8;*/
             opacity: 1;
             color: white;
         }
@@ -636,13 +628,12 @@
             border:var(--border3);
             color: #c0cccc;
             width:100%;
-            font-size:0.5rem;
+            font-size:0.8rem;
             overflow-wrap:break-word;
         }
     /*4 Song like*/
         #like 
         {
-            /*border:1px solid white;*/
             font-size:1rem;
             width:10%;
             color:lightgrey;
@@ -663,8 +654,10 @@
             margin: 0;
             display: none;
             background-color: #3b0c5e;
-            box-shadow: 0px 4px 8px 1px #535547;  
-            border-radius: .5rem ;  
+            box-shadow: 0px 4px 8px 1px #535547; 
+            opacity: 1; 
+            border-radius: .5rem ;
+            position: absolute;  
         }
 
         .dropdown-list ul
@@ -691,7 +684,6 @@
         .dropdown-list li a
         {
             list-style: none;
-            /*color: white;*/
             text-decoration: none;
         }
 
@@ -1000,7 +992,7 @@
         }
 
 
-/*Single Artist Page       */
+/*Single Artist Page*/
 
     /*INTRO*/
         .intro
